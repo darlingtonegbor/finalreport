@@ -2,55 +2,172 @@
 <html>
 <body>
 <h1><b> MGT 660 Team Panda: Final Sprint Report<b></h1>
-
-
+ 
 <p><i> Team assigned nickname: golden-pond</i></p>
 <p><i> Team members: Daniel (daniel.fernandezpalomares@yale.edu), Sara (sara.kostanteen@yale.edu), Nitya (nitya.kanuri@yale.edu), Darlington (darlington.egbor@yale.edu)</i></p>
-<p>Report Created: December 09, 2019</p>
+<p>Report Created: December 10, 2019</p>
 
 <h2>Stories completed in the final sprints prior to end of project</h2>
-<ol>
-<li>Ability to create an event (8 points)</li>
-<li>Ability to RSVP to an event (5 points)</li>
-<li>Ability to see the people who have RSVP'd for the event (3 points)</li>
-<li>Display the date and time an Event occurs (3 points)</li>
-<li>Integrate Google Analytics to the project (5 points)</li>
-</ol>
 
+<table>
+
+    <tbody>
+        <tr>
+            <td>Story No.</td>
+          <td>User story description</td>
+            <td>Story point</td>
+        </tr>
+           <tr>
+            <td>1</td>
+          <td>Creation of footer section</td>
+            <td>1</td>
+        </tr>
+      <tr>
+                  <td>2</td>
+          <td>Ability to navigate from the footer section to the About Us page</td>
+            <td>1</td>
+        </tr>
+      <tr>
+                  <td>3</td>
+          <td>Ability to access logo in the header section</td>
+            <td>1</td>
+        </tr>
+      <tr>
+                  <td>4</td>
+          <td>Ability to see the team's nickname</td>
+            <td>1</td>
+        </tr>
+      <tr>
+                  <td>5</td>
+          <td>Ability to access the footer page from the events detail page</td>
+            <td>1</td>
+        </tr>      
+      <tr>
+                  <td>6</td>
+          <td>Ability to access the home page from the events detail page</td>
+            <td>1</td>
+        </tr>       
+      <tr>
+                  <td>7</td>
+          <td>Ability to display a header on the event detail page</td>
+            <td>1</td>
+        </tr>       
+      <tr>
+                  <td>8</td>
+          <td>When API is visited at /api/events, it is valid JSON format</td>
+            <td>1</td>
+        </tr>  
+      <tr>
+                  <td>9</td>
+          <td>When API is visited at /api/events, it exists</td>
+            <td>2</td>
+        </tr>       
+      <tr>
+                  <td>10</td>
+          <td>When API is visited at /api/events, it has all the default events</td>
+            <td>1</td>
+        </tr> 
+      <tr>
+                  <td>11</td>
+          <td>When API is visited for a specific event at /api/events/4, it exists</td>
+            <td>2</td>
+        </tr>       
+      <tr>
+                  <td>12</td>
+          <td>When API is visited for a specific event at /api/events/4, it is valid JSON format</td>
+            <td>2</td>
+        </tr>       
+      <tr>
+                  <td>13</td>
+          <td>When API is visited for a specific event at /api/events/4, it has the right event</td>
+            <td>2</td>
+        </tr> 
+      <tr>
+                  <td>14</td>
+          <td>Ability to validate user inputs and display error messages</td>
+            <td>3</td>
+        </tr>      
+    </tbody>
+</table>
+ 
 <h2>Project Burndown Chart</h2>
 <img src="projectburndownchart.png" alt="Project Burndown Chart - Final Report" width="900">
 
-<h2>Team Retrospect</h2>
-<p>This week, the team had a great sprint. Stories were fledged out and the user journeys helped to make implementation easier.</p>
-<p>Development wise, the roles are now clearer. Some members of the team will focus on technical implementation, whilst others will focus on requirement analysis and UI design.</p>
-<p>Moving forward, it is anticipated that this will help the team work faster due to clarity.</p>
-<p>The core challenge face this week, technically was form validation. This was a piece of work that was pull into the sprint as the team had capacity. The team did a spike that included reviewing review the golang documentation and thus the output will be used to implement the validations in the next sprint.</p>
-<p>Another challenge was communication. The team needs to communicate better so that efforts will not be wasted</p>
+<img src="backlog_plan.png" alt="Project Plan" width="800">
 
-<h2>Backlog</h2>
-<p>These are the stories we will be taking into the sprint to work on this week. Displayed in order of priority and estimated effort required.</p>
+ 
+<h2>Google Analytics Results</h2>
+<table>
+
+    <tbody>
+        <tr>
+            <td>Traffic entity</td>
+          <td>Website url</td>
+            <td>Distribution</td>
+        </tr>
+        <tr>
+            <td>SOM</td>
+                   <td>http://som.yale.edu</td>
+            <td>8.4%</td>
+        </tr> 
+        <tr>
+            <td>Divinity</td>
+               <td>http://divinity.yale.edu</td>
+            <td>35.7%</td>
+        </tr>
+        <tr>
+            <td>Medicine</td>
+             <td>http://medicine.yale.edu</td>
+            <td>2.8%</td>
+        </tr>  
+        <tr>
+            <td>Law</td>
+          <td>http://law.yale.edu</td>
+            <td>29.2%</td>
+        </tr>  
+        <tr>
+            <td>Search</td>
+          <td>http://search.yale.edu</td>
+            <td>24.0%</td>
+        </tr>        
+    </tbody>
+</table>
+
+<p>We used google optimize to conduct an A/B test of whether users are more likely to support an event when they see a &apos;donate&apos; or &apos;support&apos; call to action. Due to some challenges of funneling traffic to our site, we do not yet have conclusive evidence to distinguish the winner. With the few bots who have viewed the event pages being tested and took action, it looks like the conversion rate on &apos;Donate&apos; is higher, ~ 50% Vs. <20% for &apos;support&apos;. That being said, the sample size is small and such results could be due to random chance.</p>
+<table>
+      <thead>
+        <tr>
+            <th colspan="2">A/B Test Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Call to Action </td>
+            <td>Percentage</td>
+        </tr>
+        <tr>
+            <td>Donate</td>
+            <td>~ 50%</td>
+        </tr>      
+        <tr>
+            <td>Support</td>
+            <td>&lt;20%</td>
+        </tr>  
+  </tbody>
+</table>
+ 
+<h2>Final Team Retrospective</h2>
+<h3>Reflection on what we did well as a team</h3>
 <ol>
-<li>Ability to validate user inputs and display error messages (3 points)</li>
-<li>Create and validate API endpoints for the App (10 points)</li>
-<li>Create APIs following the valid JSON format (3 points)</li>
-<li>Ability to display a header on the event detail page (h1) (1 points)</li>
-<li>Ability to access the home page from the events detail page (1 points)</li>
-<li>Ability to access the footer page from the events detail page (1 points)</li>
-<li>Ability to see the team's nickname (1 points)</li>
-<li>Ability to access logo in the header section (1 points)</li>
-<li>Ability to navigate from the footer section to the About Us Page (1 points)</li>
-<li>Create a footer section (1 points)</li>
+    <li>Communication via WhatsApp was our primary mode of both keeping each other up to date on developments as well as raising issues. This generally worked well and complemented our usage of ZenHub as a central product backlog for development.</li>
+    <li>Furthermore, using Zenhub to track user stories also proved effective. The team was able to implement user stories following acceptance criteria and the definition of done (DOD).</li>
 </ol>
-
-<h2>Sprint Goal</h2>
-<p>The main goal of our upcoming sprint is to deliver the APIs and ensure forms in the App validate accordingly. Additionally, to allow users to be able to navigate around the App.</p>
-
-<h2>Product Backlog</h2>
-<p>Below is a screen-shot of our product backlog in ZenHub. All of our stories are fledged out in finer details including acceptance criteria. Acceptance criteria are written following a behavioural driven development methadology (BDD). This allows us to truly develop and test the App in a similar manner a user might use it.</p> 
-
-<img src="productBacklog.png" alt="Product Backlog - Sprint 2" width="900">
-
+<h3>What we learned towards the end that could have helped us</h3>
+<ol>
+    <li>We encountered an issue at the end - bots no longer coming through to the site due to an incorrect application url thus impacted traffic and the results on our A/B test of &quot;donate&quot; vs. &quot;support&quot; language. We brought everyone together into one thread eventually and, with Kyle&apos;s help, identified the issue. We might have gotten here sooner had we had a more vertically aligned process in which one person owned one task; however, this also would required everyone knowing how to do all components (e.g., code, analytics, product management, etc.). To be more efficient in our current process, we might have created a more standardized channel through which to raise issues encountered. </li>
+</ol>
+ 
 <br />
-
+ 
 </body>
 </html>
